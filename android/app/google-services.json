@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "871626441910",
+    "project_id": "steady-academy-1e343",
+    "storage_bucket": "steady-academy-1e343.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871626441910:android:0369f22e6f8d90ba329217",
+        "android_client_info": {
+          "package_name": "com.steady.academy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871626441910-vq6hpi1rmmo1ef3hidr4rnsg53vi1kln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6nZc6qKTJXsrT0eLZeStEEXKVSfUz98w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871626441910-vq6hpi1rmmo1ef3hidr4rnsg53vi1kln.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "871626441910-17g4laou8rvten2pankus0dt10n41v6b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.steady.academy.mobile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871626441910:android:c05512afe70f8e06329217",
+        "android_client_info": {
+          "package_name": "com.steady.academy.steady_academy_mobile_revision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871626441910-vq6hpi1rmmo1ef3hidr4rnsg53vi1kln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6nZc6qKTJXsrT0eLZeStEEXKVSfUz98w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871626441910-vq6hpi1rmmo1ef3hidr4rnsg53vi1kln.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "871626441910-17g4laou8rvten2pankus0dt10n41v6b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.steady.academy.mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

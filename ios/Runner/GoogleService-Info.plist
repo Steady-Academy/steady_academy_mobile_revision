@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>871626441910-17g4laou8rvten2pankus0dt10n41v6b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.871626441910-17g4laou8rvten2pankus0dt10n41v6b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC-hxOy2TISiwavC6FMYBit6XhEr6EKvNE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>871626441910</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.steady.academy.mobile</string>
+	<key>PROJECT_ID</key>
+	<string>steady-academy-1e343</string>
+	<key>STORAGE_BUCKET</key>
+	<string>steady-academy-1e343.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:871626441910:ios:74df8bc90f57e152329217</string>
+</dict>
+</plist>
