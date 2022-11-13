@@ -44,6 +44,7 @@ dependencies:
   google_fonts: ^3.0.1
   flutter_native_splash: ^2.2.14
   flutter_svg: ^1.1.6
+  smooth_page_indicator: ^1.0.0+2
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +71,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/logo_steady_academy.svg
+    - assets/images/intro_slide_1.svg
+    - assets/images/intro_slide_2.svg
+    - assets/images/intro_slide_3.svg
+    - assets/caption/intro_slide_1_caption.txt
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
