@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'config/app_theme.dart';
+import 'constants/app_theme.dart';
 import 'routes.dart';
 
 class SteadyAcademy extends StatelessWidget {
@@ -16,6 +16,7 @@ class SteadyAcademy extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: appTheme,
       darkTheme: appTheme,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

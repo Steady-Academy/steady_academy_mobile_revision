@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:steady_academy_mobile_revision/config/app_colors.dart';
+import 'package:steady_academy_mobile_revision/constants/app_colors.dart';
 import 'package:steady_academy_mobile_revision/screens/intro/intro_controller.dart';
 import 'package:steady_academy_mobile_revision/widgets/default_button.dart';
 
@@ -17,6 +17,8 @@ class IntroFooter extends GetView<IntroController> {
             width: double.infinity,
             height: 46,
             child: DefaultButton(
+              color: AppColors.secondary,
+              onPressed: () => controller.navigateToLogin(),
               child: const Text(
                 "Masuk",
                 style: TextStyle(
@@ -25,8 +27,6 @@ class IntroFooter extends GetView<IntroController> {
                   color: AppColors.white,
                 ),
               ),
-              color: AppColors.secondary,
-              onPressed: () => controller.navigateToLogin(),
             ),
           ),
           const SizedBox(height: 16),

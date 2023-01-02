@@ -1,8 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:get/get.dart';
 
-import 'config/firebase_options.dart';
+import 'constants/firebase_options.dart';
+import 'data/user_auth.dart';
 import 'steady_academy.dart';
 
 // import 'dart:io' show Platform; // Its required for emulator
@@ -95,4 +97,5 @@ Future<void> _initFirebase() async {
   final opts = FirebaseOptionsDev.current;
 
   await Firebase.initializeApp(options: opts);
+  Get.put(AuthController());
 }

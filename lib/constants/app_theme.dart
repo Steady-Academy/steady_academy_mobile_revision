@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:steady_academy_mobile_revision/config/app_colors.dart';
+
+import 'app_colors.dart';
 
 ThemeData get appTheme => ThemeData.light().copyWith(
       primaryColor: AppColors.primary,

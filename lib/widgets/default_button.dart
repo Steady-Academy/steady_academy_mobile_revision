@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:steady_academy_mobile_revision/config/app_colors.dart';
+import 'package:steady_academy_mobile_revision/constants//app_colors.dart';
 
 class DefaultButton extends StatelessWidget {
   final Widget child;

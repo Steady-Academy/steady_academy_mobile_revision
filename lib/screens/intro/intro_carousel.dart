@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:steady_academy_mobile_revision/config/app_colors.dart';
+import 'package:steady_academy_mobile_revision/constants/app_colors.dart';
 
 import 'intro_controller.dart';
 
@@ -18,7 +18,11 @@ class IntroCarousel extends GetView<IntroController> {
             itemCount: controller.slides.length,
             controller: controller.pageController,
             itemBuilder: (_, index) => Center(
-              child: _CarouselItem(slideKey: controller.slides[index]),
+              child: _CarouselItem(
+                slideKey: controller.slides[index],
+                slideCaption: controller.slidesCaption[index],
+                slideDescription: controller.slidesDescription[index],
+              ),
             ),
           ),
         ),
@@ -40,9 +44,16 @@ class IntroCarousel extends GetView<IntroController> {
 }
 
 class _CarouselItem extends StatelessWidget {
-  const _CarouselItem({Key? key, required this.slideKey}) : super(key: key);
+  const _CarouselItem(
+      {Key? key,
+      required this.slideKey,
+      required this.slideCaption,
+      required this.slideDescription})
+      : super(key: key);
 
   final String slideKey;
+  final String slideCaption;
+  final String slideDescription;
 
   @override
   Widget build(BuildContext context) {
@@ -67,16 +78,20 @@ class _CarouselItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  '${slideKey}_caption',
+                  '${slideCaption}',
                   style: const TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 const SizedBox(height: 12),
-                Text(
-                  '${slideKey}_description',
-                  style: const TextStyle(fontSize: 12),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 50),
+                  child: Text(
+                    '${slideDescription}',
+                    style: const TextStyle(fontSize: 15),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ],
             ),
