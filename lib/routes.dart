@@ -6,6 +6,8 @@ import 'screens/gateway/gateway_controller.dart';
 import 'screens/gateway/gateway_screen.dart';
 import 'screens/intro/intro_controller.dart';
 import 'screens/intro/intro_screen.dart';
+import 'screens/login/login_controller.dart';
+import 'screens/login/login_screen.dart';
 
 List<GetPage<dynamic>> get routes => [
       GetPage(
@@ -25,6 +27,13 @@ List<GetPage<dynamic>> get routes => [
         page: () => const RegisterScreen(),
         binding: BindingsBuilder(() {
           Get.lazyPut(() => RegisterController());
+        }),
+      ),
+      GetPage(
+        name: '/login',
+        page: () => const LoginScreen(),
+        binding: BindingsBuilder(() {
+          Get.lazyPut(() => LoginController());
         }),
       ),
     ];

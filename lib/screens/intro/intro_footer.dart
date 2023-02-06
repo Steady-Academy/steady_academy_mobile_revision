@@ -18,7 +18,7 @@ class IntroFooter extends GetView<IntroController> {
             height: 46,
             child: DefaultButton(
               color: AppColors.secondary,
-              onPressed: () => {},
+              onPressed: () => controller.navigateToLogin(),
               child: const Text(
                 "Masuk",
                 style: TextStyle(
