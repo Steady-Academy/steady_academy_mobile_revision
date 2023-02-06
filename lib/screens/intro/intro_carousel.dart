@@ -65,6 +65,8 @@ class _CarouselItem extends StatelessWidget {
               alignment: Alignment.center,
               child: SvgPicture.asset(
                 'assets/images/${slideKey}.svg',
+                width: 250,
+                height: 200,
                 fit: BoxFit.fitHeight,
               ),
             ),

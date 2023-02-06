@@ -10,6 +10,9 @@ class RegisterScreen extends GetView<RegisterController> {
 
   @override
   Widget build(BuildContext context) {
-    return const AuthContainer(content: RegisterContent());
+    return const AuthContainer(
+      content: RegisterContent(),
+      title: "Register",
+    );
   }
 }

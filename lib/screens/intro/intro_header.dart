@@ -10,7 +10,7 @@ class IntroHeader extends GetView<IntroController> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(20),
-      child: Row(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(

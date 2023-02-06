@@ -24,16 +24,16 @@ class DefaultButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isLoading = this.isLoading == null ? false.obs : this.isLoading;
-    final isEnabled = this.isEnabled == null ? true.obs : this.isEnabled;
+    final isLoading = this.isLoading == null ? false.obs : this.isLoading!;
+    final isEnabled = this.isEnabled == null ? true.obs : this.isEnabled!;
     return Obx(
       () => ElevatedButton(
         style: ElevatedButton.styleFrom(
-          primary: color,
+          backgroundColor: color,
           shape: RoundedRectangleBorder(borderRadius: _borderRadius()),
         ),
-        onPressed: isLoading == true || isEnabled == false ? null : onPressed,
-        child: isLoading == true ? _indicator() : child,
+        onPressed: isLoading.isTrue || isEnabled.isFalse ? null : onPressed,
+        child: isLoading.isTrue ? _indicator() : child,
       ),
     );
   }

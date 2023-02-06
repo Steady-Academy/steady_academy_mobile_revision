@@ -12,7 +12,13 @@ ThemeData get appTheme => ThemeData.light().copyWith(
             ),
       ),
       appBarTheme: ThemeData.light().appBarTheme.copyWith(
-          backgroundColor: AppColors.primary, foregroundColor: AppColors.black),
+            backgroundColor: AppColors.white,
+            foregroundColor: AppColors.black,
+          ),
       textTheme: GoogleFonts.nunitoTextTheme(),
       scaffoldBackgroundColor: AppColors.white,
+      colorScheme: ThemeData.light().colorScheme.copyWith(
+            primary: AppColors.primary,
+          ),
+      errorColor: AppColors.red,
     );

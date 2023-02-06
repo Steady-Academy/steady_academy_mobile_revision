@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:steady_academy_mobile_revision/screens/register/register_controller.dart';
+import 'package:steady_academy_mobile_revision/screens/register/register_screen.dart';
 
 import 'screens/gateway/gateway_controller.dart';
 import 'screens/gateway/gateway_screen.dart';
@@ -16,6 +18,13 @@ List<GetPage<dynamic>> get routes => [
         page: () => const IntroScreen(),
         binding: BindingsBuilder(() {
           Get.lazyPut(() => IntroController());
+        }),
+      ),
+      GetPage(
+        name: '/register',
+        page: () => const RegisterScreen(),
+        binding: BindingsBuilder(() {
+          Get.lazyPut(() => RegisterController());
         }),
       ),
     ];

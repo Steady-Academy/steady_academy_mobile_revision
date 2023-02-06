@@ -5,30 +5,33 @@ class AuthTextField extends StatelessWidget {
   final void Function(String value)? onChanged;
   final String hint;
   final TextInputType inputType;
+  final bool obscureText;
 
-  const AuthTextField({
-    Key? key,
-    this.onChanged,
-    required this.hint,
-    required this.inputType,
-  }) : super(key: key);
+  const AuthTextField(
+      {Key? key,
+      this.onChanged,
+      required this.hint,
+      required this.inputType,
+      required this.obscureText})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       keyboardType: inputType,
+      obscureText: obscureText,
       decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(50),
-          borderSide: BorderSide.none,
-        ),
         contentPadding: const EdgeInsets.symmetric(horizontal: 16),
         fillColor: AppColors.white,
-        filled: true,
-        hintText: hint,
+        border: const OutlineInputBorder(),
+        focusedBorder: const OutlineInputBorder(
+          borderSide: BorderSide(color: AppColors.primary, width: 2.0),
+        ),
+        label: Text(hint),
+        labelStyle: const TextStyle(fontSize: 16),
       ),
       style: const TextStyle(
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: FontWeight.w500,
       ),
       maxLines: 1,
