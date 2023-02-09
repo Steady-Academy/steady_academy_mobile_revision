@@ -26,7 +26,7 @@ class IntroCarousel extends GetView<IntroController> {
             ),
           ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 5),
         SmoothPageIndicator(
           controller: controller.pageController,
           count: controller.slides.length,
@@ -66,37 +66,33 @@ class _CarouselItem extends StatelessWidget {
               child: SvgPicture.asset(
                 'assets/images/${slideKey}.svg',
                 width: 250,
-                height: 200,
+                height: 150,
                 fit: BoxFit.fitHeight,
               ),
             ),
           ),
         ),
         Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(bottom: 10),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  '${slideCaption}',
-                  style: const TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w700,
-                  ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                '${slideCaption}',
+                style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w700,
                 ),
-                const SizedBox(height: 12),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 50),
-                  child: Text(
-                    '${slideDescription}',
-                    style: const TextStyle(fontSize: 15),
-                    textAlign: TextAlign.center,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 50),
+                child: Text(
+                  '${slideDescription}',
+                  style: const TextStyle(fontSize: 15),
+                  textAlign: TextAlign.center,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ],
