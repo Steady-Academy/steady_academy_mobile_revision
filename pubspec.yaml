@@ -46,6 +46,8 @@ dependencies:
   flutter_svg: ^1.1.6
   smooth_page_indicator: ^1.0.0+2
   google_sign_in: ^5.4.2
+  rxdart: ^0.27.6
+  pinput: ^2.2.16
 
 dev_dependencies:
   flutter_test:
@@ -78,6 +80,7 @@ flutter:
     - assets/caption/intro_slide_1_caption.txt
     - assets/images/register_image.svg
     - assets/images/login_image.svg
+    - assets/images/otp_image.svg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

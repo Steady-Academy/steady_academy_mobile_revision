@@ -21,27 +21,31 @@ class RegisterContent extends GetView<RegisterController> {
         Expanded(
           child: Column(
             children: [
-              const AuthTextField(
+              AuthTextField(
                 obscureText: false,
                 hint: "Masukan nama lengkap",
+                onChanged: (val) => controller.name.value = val,
                 inputType: TextInputType.text,
               ),
               const SizedBox(height: 20),
-              const AuthTextField(
+              AuthTextField(
                 obscureText: false,
                 hint: "Masukkan email",
+                onChanged: (val) => controller.email.value = val,
                 inputType: TextInputType.emailAddress,
               ),
               const SizedBox(height: 20),
-              const AuthTextField(
+              AuthTextField(
                 obscureText: true,
                 hint: "Masukkan password",
+                onChanged: (val) => controller.password.value = val,
                 inputType: TextInputType.text,
               ),
               const SizedBox(height: 20),
-              const AuthTextField(
+              AuthTextField(
                 obscureText: true,
                 hint: "Masukkan ulang password",
+                onChanged: (val) => controller.confirm_password.value = val,
                 inputType: TextInputType.text,
               ),
               const SizedBox(height: 20),
@@ -52,7 +56,7 @@ class RegisterContent extends GetView<RegisterController> {
                   roundedSize: 50,
                   isLoading: controller.isLoading,
                   isEnabled: controller.canRegister,
-                  onPressed: () => {},
+                  onPressed: () => controller.performRegister(),
                   child: Text(
                     'Register'.tr,
                     style: const TextStyle(

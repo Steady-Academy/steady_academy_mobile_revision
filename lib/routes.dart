@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:steady_academy_mobile_revision/screens/otp/otp_controller.dart';
+import 'package:steady_academy_mobile_revision/screens/otp/otp_screen.dart';
 import 'package:steady_academy_mobile_revision/screens/register/register_controller.dart';
 import 'package:steady_academy_mobile_revision/screens/register/register_screen.dart';
 
@@ -34,6 +36,13 @@ List<GetPage<dynamic>> get routes => [
         page: () => const LoginScreen(),
         binding: BindingsBuilder(() {
           Get.lazyPut(() => LoginController());
+        }),
+      ),
+      GetPage(
+        name: '/otp',
+        page: () => const OTPScreen(),
+        binding: BindingsBuilder(() {
+          Get.lazyPut(() => OTPController());
         }),
       ),
     ];
