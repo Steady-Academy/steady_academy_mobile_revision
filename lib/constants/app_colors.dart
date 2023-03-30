@@ -22,4 +22,5 @@ class AppColors {
 
   static const lightRed = Color(0xFFFF4D00);
   static const red = Color(0xFFFF4218);
+  static const navigationBar = Color(0xE8EAF6);
 }

@@ -6,6 +6,8 @@ import 'package:steady_academy_mobile_revision/screens/register/register_screen.
 
 import 'screens/gateway/gateway_controller.dart';
 import 'screens/gateway/gateway_screen.dart';
+import 'screens/home/home_controller.dart';
+import 'screens/home/home_screen.dart';
 import 'screens/intro/intro_controller.dart';
 import 'screens/intro/intro_screen.dart';
 import 'screens/login/login_controller.dart';
@@ -43,6 +45,13 @@ List<GetPage<dynamic>> get routes => [
         page: () => const OTPScreen(),
         binding: BindingsBuilder(() {
           Get.lazyPut(() => OTPController());
+        }),
+      ),
+      GetPage(
+        name: '/home',
+        page: () => const HomeScreen(),
+        binding: BindingsBuilder(() {
+          Get.lazyPut(() => HomeController());
         }),
       ),
     ];
