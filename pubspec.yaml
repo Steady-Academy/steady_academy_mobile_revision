@@ -81,6 +81,11 @@ flutter:
     - assets/images/register_image.svg
     - assets/images/login_image.svg
     - assets/images/otp_image.svg
+    - assets/icon/ic_bag.svg
+    - assets/icon/ic_course.svg
+    - assets/icon/ic_home.svg
+    - assets/icon/ic_search.svg
+    - assets/icon/ic_setting.svg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
